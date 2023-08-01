@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", intial-scale="1.0">
+        <title>All Products-HR CLOSET</title>
+        <link rel="stylesheet" href="des.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body> 
+        
+        <div class="container">
+        <div class = "navbar">
+            <nav>
+               <img src="HR-removebg-preview.png" class="logo">
+                <ul id="menuitems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Fabrics</a></li>
+                    <li><a href="">Bulk order</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+           
+                <img src="cart2.png" width="30px" height="30px">
+                <img src="menu.png" class="menu" onclick="menutoggle()">
+            </nav>
+            </div>
+    </div>
+    <!----single product details---->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+               <img src="m3.png" width="100%" id="ProductImg" class="small-img">
+               <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="m31.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="m32.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="m3.png" width="100%" class="small-img">
+                </div>
+               
+               </div>
+            </div>
+            <div class="col-2">
+                <p>Home/T-Shirt</p>
+                <h1>Nude Knitted T-Shirt</h1>
+                <h4>$30.00</h4>
+                <select>
+                   <option>Select Size</option>
+                   <option>XXL</option>
+                   <option>XL</option>
+                   <option>L</option>
+                   <option>M</option>
+                   <option>S</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+                <h3>Product Details</h3>
+                <br>
+                <p>With this pale brown t-shirt, you can instantly add swagger to your casual wardrobe. This full-sleeved shirt has a relaxed fit and rounded collar. It is made of a lightweight cotton and has a stripe textured finish for visual appeal.</p>
+                </div>
+        </div>
+    </div>
+
+   <div class="small-container">
+        <div class="row">
+    <div class="col-4">
+        <img src="p3.png" >
+        <h4>georgette fabric</h4>
+       <p>$8.00/metre</p>
+    </div>
+    <div class="col-4">
+        <img src="cl1.jpg" >
+        <h4>Leaf Embrioded lehanga set</h4>
+       <p>$72.00</p>
+    </div>
+    <div class="col-4">
+        <img src="cl4.png" >
+        <h4>Royal Kurta</h4>
+       <p>$42.00</p>
+    </div>
+    <div class="col-4">
+        <img src="c5.png" >
+        <h4>Line kurta fabric</h4>
+       <p>$9.00/metre</p>
+    </div>
+</div>  
+  </div>
+
+
+
+<!-----footer----->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer col-1">
+                <h3>Download our App</h3>
+                <p>Download our App for Android mobile phone.</p>
+                <div class="app-logo">
+                  <img src="app logo.png">
+            </div>
+            </div>
+            <div class="footer col-2">
+                <img src="hr.png">
+                <p>The secrete of great style is to feel good in what you wear.Our motive is <br>to give your dream outfit.</p>
+            </div>
+            <div class="footer col-3">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyrigth 2022-HR CLOSET</p>
+    </div>
+</div>
+<!----js for toogle menu---->
+<script>
+    var menuitems= document.getElementById("menuitems");
+
+   
+
+    function menutoggle(){
+    if( menuitems.style.maxHeight == "0px")
+    {
+        menuitems.style.maxHeight="200px";
+    }
+    else{
+        menuitems.style.maxHeight="0px";
+    }
+}
+</script>
+<!---js for product gallery--->
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick=function()
+    {
+        ProductImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick=function()
+    {
+        ProductImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick=function()
+    {
+        ProductImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick=function()
+    {
+        ProductImg.src=SmallImg[3].src;
+    }
+</script>
+   </body>
+</html>
